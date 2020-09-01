@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans",sans-serif;
+}
+
+body{    
+   
+    background-image: url(https://wallpaperaccess.com/full/934072.jpg);
+    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.topnav ul{
+    display: flex;
+    padding: 0 15px;
+}
+.topnav ul li{
+    list-style: none;
+    padding: 5px 15px;
+}
+
+.topnav a:hover{
+    /*background-color: gold;*/
+    color: aqua;
+    border-bottom: 5px solid #fbb73c;
+}
+
+.center{
+    position: absolute;
+    display: grid;
+
+    top:40%;
+    left: 15%;
+}
+
+.text::after{
+    content: "";
+    animation: changetext 9s infinite linear ;
+    color: ivory;
+    font-size: 30px;
+    /*display: grid;
+    place-items: center;
+    margin-top:250px ;*/
+    font-weight: 700;
+}
+
+@keyframes changetext{
+    0%{content: "Online Classes ? ";}
+    40%{content:"Staring at the screen All day ";}
+    70%{content: "Seeing 100 videos for us  ";}
+    90%{content: "Teachers to the Rescue";}
+    100%{content: "Thanks a lot ";}
+}
+
+
+.copyright {
+    font-size: 13pt;
+    bottom:0px;
+    text-align:right;
+    font-weight: 600;
+    position: absolute;
+    padding-bottom: 3px;
+    right:0px; 
+    color: black;
+}
+.contacts img {
+    height: 35px;
+    width: 35px;
+    margin-left: 7px;
+    margin-right: 7px;
+    
+}
+.contacts a {
+    text-decoration: none;
+}
+.contacts img:hover {
+    opacity: 0.8;
+}
+.contacts{
+    text-align: right;
+    bottom:0px;
+    position: absolute;
+    padding-bottom: 3px;
+}
